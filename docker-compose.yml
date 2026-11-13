@@ -1,0 +1,8 @@
+services:
+  api:
+    build: .
+    image: fastapi-jenkins-demo:local
+    container_name: fastapi-jenkins-demo
+    ports:
+      - "127.0.0.1:8000:8000"
+    restart: unless-stopped
